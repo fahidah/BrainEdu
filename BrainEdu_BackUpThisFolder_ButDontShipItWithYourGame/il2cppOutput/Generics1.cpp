@@ -520,6 +520,8 @@ struct Action_1_t5BA030A354EB4C15ED7375FC5F593FFAF3F6693B;
 struct Action_1_tB952E159C9AA77923ECB95116E7F5CDC67BF9FD9;
 // System.Action`1<System.Object>
 struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
+// System.Action`1<UnityEngine.Pose>
+struct Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD;
 // System.Action`1<UnityEngine.Ray>
 struct Action_1_t9A1E7FAC53F7DC585F6922AD2C125BDB63CDB4C2;
 // System.Action`1<UnityEngine.RaycastHit>
@@ -664,6 +666,8 @@ struct Action_1_tC9ED24C0095E54421C391A3B5E7FD6B0D75CFDB2;
 struct Action_1_tD79B5E685127070AEC1ECA23726EC00981506A0B;
 // System.Action`1<UnityEngine.Rendering.Universal.ShadowUtility/Edge>
 struct Action_1_tA92AFB339FAE68919988F1265D49D5B106700E4A;
+// System.Action`1<Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint>
+struct Action_1_t1E8ED0146B53B7047A52E5348A6EF941A457D572;
 // System.Action`1<UnityEngine.UIElements.TemplateAsset/AttributeOverride>
 struct Action_1_tC08CABD73B553BC0216715761353DA85A6D117C4;
 // System.Action`1<UnityEngine.TextCore.Text.TextSettings/FontReferenceMap>
@@ -998,6 +1002,8 @@ struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
 struct BaseRaycaster_t7DC8158FD3CA0193455344379DD5FF7CD5F1F832;
 // UnityEngine.UIElements.BaseVisualElementPanel
 struct BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303;
+// Microsoft.MixedReality.Toolkit.SpatialManipulation.BoundsHandleInteractable
+struct BoundsHandleInteractable_tDBFB890CB6FE88D06B95F168FB696AC459D74920;
 // System.Byte
 struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3;
 // UnityEngine.Rendering.Universal.DecalCachedChunk
@@ -7818,6 +7824,27 @@ struct Edge_tC0E866D7F28E832CE7BEF95C87BECCD97FB09AAB_marshaled_com
 	int32_t ___compareReversed_3;
 };
 
+// Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint
+struct HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B 
+{
+	// Microsoft.MixedReality.Toolkit.SpatialManipulation.BoundsHandleInteractable Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint::Handle
+	BoundsHandleInteractable_tDBFB890CB6FE88D06B95F168FB696AC459D74920* ___Handle_0;
+	// UnityEngine.Vector2 Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint::Position
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___Position_1;
+};
+// Native definition for P/Invoke marshalling of Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint
+struct HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B_marshaled_pinvoke
+{
+	BoundsHandleInteractable_tDBFB890CB6FE88D06B95F168FB696AC459D74920* ___Handle_0;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___Position_1;
+};
+// Native definition for COM marshalling of Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint
+struct HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B_marshaled_com
+{
+	BoundsHandleInteractable_tDBFB890CB6FE88D06B95F168FB696AC459D74920* ___Handle_0;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___Position_1;
+};
+
 // UnityEngine.UIElements.UIR.TextureBlitter/BlitInfo
 struct BlitInfo_t6D4C0580BBEF65F5EAD39FB6DBC85F360CF6A357 
 {
@@ -9654,6 +9681,11 @@ struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87  : public MulticastDel
 {
 };
 
+// System.Action`1<UnityEngine.Pose>
+struct Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD  : public MulticastDelegate_t
+{
+};
+
 // System.Action`1<UnityEngine.Ray>
 struct Action_1_t9A1E7FAC53F7DC585F6922AD2C125BDB63CDB4C2  : public MulticastDelegate_t
 {
@@ -10011,6 +10043,11 @@ struct Action_1_tD79B5E685127070AEC1ECA23726EC00981506A0B  : public MulticastDel
 
 // System.Action`1<UnityEngine.Rendering.Universal.ShadowUtility/Edge>
 struct Action_1_tA92AFB339FAE68919988F1265D49D5B106700E4A  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint>
+struct Action_1_t1E8ED0146B53B7047A52E5348A6EF941A457D572  : public MulticastDelegate_t
 {
 };
 
@@ -19451,6 +19488,84 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+void Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_Multicast(Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___obj0, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* currentDelegate = reinterpret_cast<Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_OpenInst(Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___obj0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
+}
+void Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_OpenStatic(Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___obj0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
+}
+void Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_OpenStaticInvoker(Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___obj0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker1< Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
+}
+void Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_ClosedStaticInvoker(Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___obj0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker2< RuntimeObject*, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
+}
+// System.Void System.Action`1<UnityEngine.Pose>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mC9BB90DB767BB1770D5639F9A4819990B3BAA0BA_gshared (Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
+	__this->___method_3 = ___method1;
+	__this->___m_target_2 = ___object0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___method1))
+	{
+		bool isOpen = parameterCount == 1;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_OpenStatic;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		if (___object0 == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+	}
+	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_Multicast;
+}
+// System.Void System.Action`1<UnityEngine.Pose>::Invoke(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_gshared (Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___obj0, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 void Action_1_Invoke_mB377052AEE4BE855EC25E5B642EA7260C8460ADB_Multicast(Action_1_t9A1E7FAC53F7DC585F6922AD2C125BDB63CDB4C2* __this, Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 ___obj0, const RuntimeMethod* method)
 {
 	il2cpp_array_size_t length = __this->___delegates_13->max_length;
@@ -25057,6 +25172,84 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mDAAB826D86D00836E18DC613
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m2A353386F24399150D80F9D91DCDB821F2E596A1_gshared (Action_1_tA92AFB339FAE68919988F1265D49D5B106700E4A* __this, Edge_tC0E866D7F28E832CE7BEF95C87BECCD97FB09AAB ___obj0, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, Edge_tC0E866D7F28E832CE7BEF95C87BECCD97FB09AAB, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void Action_1_Invoke_mD978B4C7826A78A77D8891E929E790C829CCCEAD_Multicast(Action_1_t1E8ED0146B53B7047A52E5348A6EF941A457D572* __this, HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B ___obj0, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Action_1_t1E8ED0146B53B7047A52E5348A6EF941A457D572* currentDelegate = reinterpret_cast<Action_1_t1E8ED0146B53B7047A52E5348A6EF941A457D572*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void Action_1_Invoke_mD978B4C7826A78A77D8891E929E790C829CCCEAD_OpenInst(Action_1_t1E8ED0146B53B7047A52E5348A6EF941A457D572* __this, HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B ___obj0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
+}
+void Action_1_Invoke_mD978B4C7826A78A77D8891E929E790C829CCCEAD_OpenStatic(Action_1_t1E8ED0146B53B7047A52E5348A6EF941A457D572* __this, HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B ___obj0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
+}
+void Action_1_Invoke_mD978B4C7826A78A77D8891E929E790C829CCCEAD_OpenStaticInvoker(Action_1_t1E8ED0146B53B7047A52E5348A6EF941A457D572* __this, HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B ___obj0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker1< HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
+}
+void Action_1_Invoke_mD978B4C7826A78A77D8891E929E790C829CCCEAD_ClosedStaticInvoker(Action_1_t1E8ED0146B53B7047A52E5348A6EF941A457D572* __this, HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B ___obj0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker2< RuntimeObject*, HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
+}
+// System.Void System.Action`1<Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mF419063DF49B162F0A05AAD93095E8AB471AFAAA_gshared (Action_1_t1E8ED0146B53B7047A52E5348A6EF941A457D572* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
+	__this->___method_3 = ___method1;
+	__this->___m_target_2 = ___object0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___method1))
+	{
+		bool isOpen = parameterCount == 1;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mD978B4C7826A78A77D8891E929E790C829CCCEAD_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mD978B4C7826A78A77D8891E929E790C829CCCEAD_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mD978B4C7826A78A77D8891E929E790C829CCCEAD_OpenStatic;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		if (___object0 == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+	}
+	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mD978B4C7826A78A77D8891E929E790C829CCCEAD_Multicast;
+}
+// System.Void System.Action`1<Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint>::Invoke(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mD978B4C7826A78A77D8891E929E790C829CCCEAD_gshared (Action_1_t1E8ED0146B53B7047A52E5348A6EF941A457D572* __this, HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B ___obj0, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 #ifdef __clang__

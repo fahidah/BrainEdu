@@ -435,6 +435,8 @@ struct BrickChunkAllocU5BU5D_t6F006CB2BCFBE51C06C6600018AE6E341ABCD96F;
 struct CompiledPassInfoU5BU5D_tABD910C36DB41F35B2DDE8BEF16F9C5F7E02B755;
 // UnityEngine.Experimental.Rendering.RenderGraphModule.RenderGraph/CompiledResourceInfo[]
 struct CompiledResourceInfoU5BU5D_tE49CFCDFE7FD29F35FD9C87AE831EBED0F7CCDD5;
+// Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint[]
+struct HandlePointU5BU5D_t0B1438293F0E9F3F54A2BEA2806C15A9C4F51FE3;
 // UnityEngine.UIElements.StyleVariableResolver/ResolveContext[]
 struct ResolveContextU5BU5D_tA44F71F5EFF2CE305C748D326687E840F314B3FB;
 // System.Action
@@ -447,6 +449,8 @@ struct BaseVerticalCollectionView_t2BCDC86B9E301E46CFB2500A834D640F0B96ADAE;
 struct BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303;
 // System.Reflection.Binder
 struct Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235;
+// Microsoft.MixedReality.Toolkit.SpatialManipulation.BoundsHandleInteractable
+struct BoundsHandleInteractable_tDBFB890CB6FE88D06B95F168FB696AC459D74920;
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 // UnityEngine.UIElements.CollectionViewController
@@ -674,6 +678,7 @@ struct EventRecordU5BU5D_tB7CC04280192D9B2B4980F107F93ABBBE4E4DCA8;
 struct BrickChunkAllocU5BU5D_t6F006CB2BCFBE51C06C6600018AE6E341ABCD96F;
 struct CompiledPassInfoU5BU5D_tABD910C36DB41F35B2DDE8BEF16F9C5F7E02B755;
 struct CompiledResourceInfoU5BU5D_tE49CFCDFE7FD29F35FD9C87AE831EBED0F7CCDD5;
+struct HandlePointU5BU5D_t0B1438293F0E9F3F54A2BEA2806C15A9C4F51FE3;
 struct ResolveContextU5BU5D_tA44F71F5EFF2CE305C748D326687E840F314B3FB;
 
 IL2CPP_EXTERN_C_BEGIN
@@ -1155,6 +1160,17 @@ struct EmptyArray_1_tF754686745E63AFF9D056BB290F3BC2F3CB71C86_StaticFields
 {
 	// T[] System.EmptyArray`1::Value
 	BrickChunkAllocU5BU5D_t6F006CB2BCFBE51C06C6600018AE6E341ABCD96F* ___Value_0;
+};
+
+// System.EmptyArray`1<Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint>
+struct EmptyArray_1_tDB5E7D040522B36873F20541BD636014FACD7FF0  : public RuntimeObject
+{
+};
+
+struct EmptyArray_1_tDB5E7D040522B36873F20541BD636014FACD7FF0_StaticFields
+{
+	// T[] System.EmptyArray`1::Value
+	HandlePointU5BU5D_t0B1438293F0E9F3F54A2BEA2806C15A9C4F51FE3* ___Value_0;
 };
 
 // System.EmptyArray`1<UnityEngine.UIElements.StyleVariableResolver/ResolveContext>
@@ -3590,6 +3606,27 @@ struct ViewConfiguration_t61525F9C53DF183D020A0E95C360D831D35E43EF_marshaled_com
 	OpenXRViewConfiguration_t4809304A095ED211F9198F647B68CA33EE1D360E_marshaled_com ___m_openxrViewConfiguration_1;
 };
 
+// Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint
+struct HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B 
+{
+	// Microsoft.MixedReality.Toolkit.SpatialManipulation.BoundsHandleInteractable Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint::Handle
+	BoundsHandleInteractable_tDBFB890CB6FE88D06B95F168FB696AC459D74920* ___Handle_0;
+	// UnityEngine.Vector2 Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint::Position
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___Position_1;
+};
+// Native definition for P/Invoke marshalling of Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint
+struct HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B_marshaled_pinvoke
+{
+	BoundsHandleInteractable_tDBFB890CB6FE88D06B95F168FB696AC459D74920* ___Handle_0;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___Position_1;
+};
+// Native definition for COM marshalling of Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint
+struct HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B_marshaled_com
+{
+	BoundsHandleInteractable_tDBFB890CB6FE88D06B95F168FB696AC459D74920* ___Handle_0;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___Position_1;
+};
+
 // System.Collections.Generic.Dictionary`2/Enumerator<System.Text.RegularExpressions.Regex/CachedCodeEntryKey,System.Object>
 struct Enumerator_tB7298ABA389EB46AD2BEB2E35D7FF51A6525D750 
 {
@@ -5963,6 +6000,41 @@ struct BrickChunkAllocU5BU5D_t6F006CB2BCFBE51C06C6600018AE6E341ABCD96F  : public
 	inline void SetAtUnchecked(il2cpp_array_size_t index, BrickChunkAlloc_tE20AA1DC63F165DAA678ECF487C52A848589F45F value)
 	{
 		m_Items[index] = value;
+	}
+};
+// Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint[]
+struct HandlePointU5BU5D_t0B1438293F0E9F3F54A2BEA2806C15A9C4F51FE3  : public RuntimeArray
+{
+	ALIGN_FIELD (8) HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B m_Items[1];
+
+	inline HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___Handle_0), (void*)NULL);
+	}
+	inline HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, HandlePoint_t5D43A165ACD907EC444BCEC20C63A07E34104C5B value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___Handle_0), (void*)NULL);
 	}
 };
 // UnityEngine.UIElements.StyleVariableResolver/ResolveContext[]
@@ -26411,6 +26483,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyArray_1__cctor_m9839889B372C3EAE43E
 		BrickChunkAllocU5BU5D_t6F006CB2BCFBE51C06C6600018AE6E341ABCD96F* L_0 = (BrickChunkAllocU5BU5D_t6F006CB2BCFBE51C06C6600018AE6E341ABCD96F*)(BrickChunkAllocU5BU5D_t6F006CB2BCFBE51C06C6600018AE6E341ABCD96F*)SZArrayNew(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0), (uint32_t)0);
 		((EmptyArray_1_tF754686745E63AFF9D056BB290F3BC2F3CB71C86_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 1)))->___Value_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((EmptyArray_1_tF754686745E63AFF9D056BB290F3BC2F3CB71C86_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 1)))->___Value_0), (void*)L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.EmptyArray`1<Microsoft.MixedReality.Toolkit.SpatialManipulation.SqueezableBoxVisuals/HandlePoint>::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyArray_1__cctor_mE9E3CB9A698CD7E0E2640A292F9F9FEB5AA5B92F_gshared (const RuntimeMethod* method) 
+{
+	{
+		HandlePointU5BU5D_t0B1438293F0E9F3F54A2BEA2806C15A9C4F51FE3* L_0 = (HandlePointU5BU5D_t0B1438293F0E9F3F54A2BEA2806C15A9C4F51FE3*)(HandlePointU5BU5D_t0B1438293F0E9F3F54A2BEA2806C15A9C4F51FE3*)SZArrayNew(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0), (uint32_t)0);
+		((EmptyArray_1_tDB5E7D040522B36873F20541BD636014FACD7FF0_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 1)))->___Value_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((EmptyArray_1_tDB5E7D040522B36873F20541BD636014FACD7FF0_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 1)))->___Value_0), (void*)L_0);
 		return;
 	}
 }

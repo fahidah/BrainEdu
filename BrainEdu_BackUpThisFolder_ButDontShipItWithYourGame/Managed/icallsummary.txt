@@ -245,6 +245,7 @@ UnityEngine.Behaviour::get_enabled
 UnityEngine.Behaviour::get_isActiveAndEnabled
 UnityEngine.Behaviour::set_enabled
 UnityEngine.Bounds::Contains_Injected
+UnityEngine.Bounds::IntersectRayAABB_Injected
 UnityEngine.Bounds::ClosestPoint_Injected
 UnityEngine.BoxCollider::get_center_Injected
 UnityEngine.BoxCollider::get_size_Injected
@@ -676,6 +677,7 @@ UnityEngine.Jobs.TransformAccessArray::RemoveAtSwapBack
 UnityEngine.Jobs.TransformAccessArray::GetTransform
 UnityEngine.JsonUtility::FromJsonInternal
 UnityEngine.JsonUtility::ToJsonInternal
+UnityEngine.LayerMask::NameToLayer
 UnityEngine.Light::get_useColorTemperature
 UnityEngine.Light::get_bounceIntensity
 UnityEngine.Light::get_colorTemperature
@@ -843,6 +845,7 @@ UnityEngine.ParticleSystem::SetParticles
 UnityEngine.ParticleSystem/MainModule::get_startColor_Injected
 UnityEngine.ParticleSystem/MainModule::get_startSize_Injected
 UnityEngine.ParticleSystemRenderer::GetMeshes
+UnityEngine.Physics::SyncTransforms
 UnityEngine.Physics::get_defaultPhysicsScene_Injected
 UnityEngine.Physics::get_gravity_Injected
 UnityEngine.Physics::Internal_RaycastAll_Injected
@@ -1363,6 +1366,7 @@ UnityEngine.Transform::set_rotation_Injected
 UnityEngine.Transform::FindRelativeTransformWithPath
 UnityEngine.Transform::GetChild
 UnityEngine.Transform::GetParent
+UnityEngine.Transform::GetRoot
 UnityEngine.U2D.PixelPerfectRendering::set_pixelSnapSpacing
 UnityEngine.U2D.SpriteAtlas::CanBindTo
 UnityEngine.U2D.SpriteAtlasManager::Register
