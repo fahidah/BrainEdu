@@ -34,6 +34,9 @@ public class QuizManager : MonoBehaviour
 
     public GameObject brainModel;
 
+
+    [SerializeField]
+    private GameObject answerButtons;
     private void Start()
     {
         if(unasweredQnA == null || unasweredQnA.Count == 0)
@@ -52,12 +55,20 @@ public class QuizManager : MonoBehaviour
 
     void generateQuestion()
     {
-        int randomQuestionIndex = Random.Range(0, unasweredQnA.Count);
-        currentQuestion = unasweredQnA[randomQuestionIndex];
+        if(unasweredQnA.Count != 0)
+        {
+            int randomQuestionIndex = Random.Range(0, unasweredQnA.Count);
+            currentQuestion = unasweredQnA[randomQuestionIndex];
 
-        questionTxt.text = currentQuestion.questions;
-        SetBrainMaterial();
-        setAnswers();
+            questionTxt.text = currentQuestion.questions;
+            SetBrainMaterial();
+            setAnswers();
+        }
+        else
+        {
+            questionTxt.text = "\t\t\tWeldone!\n Your Total score is......of 100.    Would you like to retry?";
+            answerButtons.SetActive(false);
+        }
     }
 
     void setAnswers()
