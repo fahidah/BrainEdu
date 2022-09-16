@@ -60,11 +60,23 @@ public class QuizManager : MonoBehaviour
             //options[i].GetComponent<Answers>().isCorrect = false;
             options[i].transform.GetChild(0).GetComponent<TextMeshPro>().text = currentQuestion.answers[i];
 
+            currentQuestion.referencedPart.GetComponent<MeshRenderer>().enabled = true;
+            for (int j = 0; j < currentQuestion.otherBrainParts.Length; j++)
+            {
+                currentQuestion.otherBrainParts[j].GetComponent<MeshRenderer>().enabled = false;
+            }
+            
+
             if (currentQuestion.correctAnswer == i + 1)
             {
                 options[i].GetComponent<Answer>().isCorrect = true;
             }
         }
+    }
+
+    void setVisibleBrainPart()
+    {
+
     }
 
     // This keeps track of scores
