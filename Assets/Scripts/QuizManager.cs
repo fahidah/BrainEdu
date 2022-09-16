@@ -5,12 +5,22 @@ using UnityEngine;
 
 public class QuizManager : MonoBehaviour
 {
+    //Create an array of questions to be tested
     public List<QandA> QnA;
+
+    //make reference to the options buttton
     public GameObject[] options;
+
+    //track the index of current question
     public int currentQuestion;
+
+    //declare variable for the score
     private int score;
+
+    //text for the score
     public TextMeshPro scoreText;
 
+    //text for the question
     public TextMeshPro questionTxt;
 
 

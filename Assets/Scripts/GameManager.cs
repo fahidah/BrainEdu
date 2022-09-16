@@ -5,63 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject welcome, definition, parts, cerebrum, cerebellum, stem, brain;
-
-
-    // Start Lesson
-    public void startLesssonCLicked()
-    {
-        welcome.gameObject.SetActive(false);
-        definition.gameObject.SetActive(true);
-    }
-
-    public void definitionDialog()
-    {
-        definition.gameObject.SetActive(false);
-        parts.gameObject.SetActive(true);
-    }
-
-    public void partsDialog()
-    {
-        parts.gameObject.SetActive(false);
-        cerebrum.gameObject.SetActive(true);
-    }
-
-   
-    public void cerebellumDialog()
-    {
-        cerebellum.gameObject.SetActive(false);
-        stem.gameObject.SetActive(true);
-    }
-    public void stemDialog()
-    {
-        stem.gameObject.SetActive(false);
-        brain.gameObject.SetActive(true);
-    }
-
-    public void brainDialog()
-    {
-        brain.gameObject.SetActive(false);
-    }
-
 
     //Load Learn Scene
     public void LearnScene(string name)
     {
-        SceneManager.LoadScene("Learn Scene");
+        SceneManager.LoadScene("MainScene");
     }
 
     //Load Quiz Scene
     public void QuizScene(string name)
     {
-        SceneManager.LoadScene("Quiz Scene");
+        SceneManager.LoadScene("TestScene");
     }
 
-    //Load WELCOME Scene
-    public void WelcomeScene(string name)
-    {
-        SceneManager.LoadScene("Welcome Scene");
-    }
 
     //Reload Quiz Scene
     public void ReloadLearnScene(string name)
