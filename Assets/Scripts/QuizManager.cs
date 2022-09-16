@@ -63,7 +63,6 @@ public class QuizManager : MonoBehaviour
             if (currentQuestion.correctAnswer == i + 1)
             {
                 options[i].GetComponent<Answer>().isCorrect = true;
-                //unasweredQnA.Remove(currentQuestion);
             }
         }
     }
