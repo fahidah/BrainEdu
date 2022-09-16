@@ -32,6 +32,8 @@ public class QuizManager : MonoBehaviour
     //transparent material
     private Material transparentMaterial;
 
+    public GameObject brainModel;
+
     private void Start()
     {
         if(unasweredQnA == null || unasweredQnA.Count == 0)
@@ -54,6 +56,7 @@ public class QuizManager : MonoBehaviour
         currentQuestion = unasweredQnA[randomQuestionIndex];
 
         questionTxt.text = currentQuestion.questions;
+        SetBrainMaterial();
         setAnswers();
     }
 
@@ -63,13 +66,6 @@ public class QuizManager : MonoBehaviour
         {
             //options[i].GetComponent<Answers>().isCorrect = false;
             options[i].transform.GetChild(0).GetComponent<TextMeshPro>().text = currentQuestion.answers[i];
-
-            currentQuestion.referencedPart.GetComponent<MeshRenderer>().enabled = true;
-            for (int j = 0; j < currentQuestion.otherBrainParts.Length; j++)
-            {
-                currentQuestion.otherBrainParts[j].GetComponent<MeshRenderer>().material = transparentMaterial;
-                currentQuestion.otherBrainParts[j].GetComponent<ObjectManipulator>().enabled = false;
-            }
             
 
             if (currentQuestion.correctAnswer == i + 1)
@@ -79,10 +75,21 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    void SetBrainMaterial()
+    {
+        currentQuestion.referencedPart.GetComponent<MeshRenderer>().enabled = true;
+        for (int j = 0; j < currentQuestion.otherBrainParts.Length; j++)
+        {
+            currentQuestion.otherBrainParts[j].GetComponent<MeshRenderer>().material = transparentMaterial;
+            currentQuestion.otherBrainParts[j].GetComponent<ObjectManipulator>().enabled = false;
+        }
+    }
+
     // This keeps track of scores
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
         scoreText.text =  score.ToString();
+        Debug.Log(score);
     }
 }
