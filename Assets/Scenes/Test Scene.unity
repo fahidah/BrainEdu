@@ -176,7 +176,7 @@ PrefabInstance:
     - target: {fileID: 8752154283924914586, guid: fc97df8027319634f8ab3348c108205f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8752154283924914586, guid: fc97df8027319634f8ab3348c108205f,
         type: 3}
@@ -246,6 +246,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 134947475}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &134947477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8752154283405346683, guid: fc97df8027319634f8ab3348c108205f,
+    type: 3}
+  m_PrefabInstance: {fileID: 134947475}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &134947478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134947477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4725c5bd9656041ac7dfd2491be08a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 1346778088}
 --- !u!114 &547643731 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5569439093497552269, guid: 4d7e2f87fefe0ba468719b15288b46e7,
@@ -584,6 +604,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc97df8027319634f8ab3348c108205f, type: 3}
+--- !u!1 &712930212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8752154283405346683, guid: fc97df8027319634f8ab3348c108205f,
+    type: 3}
+  m_PrefabInstance: {fileID: 712930211}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &724197012 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6860671045458266759, guid: 68048c9f9341f6f49a1c36a315370ab5,
@@ -922,6 +948,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 813443262}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &813443264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8752154283405346683, guid: fc97df8027319634f8ab3348c108205f,
+    type: 3}
+  m_PrefabInstance: {fileID: 813443262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &813443265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813443264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4725c5bd9656041ac7dfd2491be08a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 1346778088}
 --- !u!4 &845586398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3493013819197874656, guid: ad5b753b73e311143a85055b15cea562,
@@ -1057,7 +1103,7 @@ PrefabInstance:
     - target: {fileID: 8752154283924914586, guid: fc97df8027319634f8ab3348c108205f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8752154283924914586, guid: fc97df8027319634f8ab3348c108205f,
         type: 3}
@@ -1127,6 +1173,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1054999848}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1054999850 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8752154283405346683, guid: fc97df8027319634f8ab3348c108205f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1054999848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1054999851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054999850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4725c5bd9656041ac7dfd2491be08a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 1346778088}
 --- !u!1 &1183084360 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6420641391381508391, guid: 68048c9f9341f6f49a1c36a315370ab5,
@@ -1976,6 +2042,78 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3435136633698641610, guid: 68048c9f9341f6f49a1c36a315370ab5, type: 3}
+--- !u!1 &1346778087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1346778089}
+  - component: {fileID: 1346778088}
+  m_Layer: 0
+  m_Name: Quiz Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1346778088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346778087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16127402f019be488101f17eb557068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QnA:
+  - questions: 
+    answers:
+    - 
+    - 
+    - 
+    - 
+    correctAnswer: 0
+  - questions: 
+    answers: []
+    correctAnswer: 0
+  - questions: 
+    answers: []
+    correctAnswer: 0
+  - questions: 
+    answers: []
+    correctAnswer: 0
+  - questions: 
+    answers: []
+    correctAnswer: 0
+  options:
+  - {fileID: 712930212}
+  - {fileID: 813443264}
+  - {fileID: 134947477}
+  - {fileID: 1054999850}
+  currentQuestion: 0
+  scoreText: {fileID: 5601732840256546171}
+  questionTxt: {fileID: 7649120794377568817}
+--- !u!4 &1346778089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346778087}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1467358179 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1487116187034921530, guid: 68048c9f9341f6f49a1c36a315370ab5,
@@ -2315,6 +2453,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 712930211}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1508701123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712930212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4725c5bd9656041ac7dfd2491be08a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 1346778088}
 --- !u!1 &1567048423
 GameObject:
   m_ObjectHideFlags: 0
@@ -9884,8 +10036,8 @@ Transform:
   - {fileID: 511208122353135040}
   - {fileID: 1508701122}
   - {fileID: 813443263}
-  - {fileID: 1054999849}
   - {fileID: 134947476}
+  - {fileID: 1054999849}
   - {fileID: 601986242602585260}
   m_Father: {fileID: 1567048424}
   m_RootOrder: 0

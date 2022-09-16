@@ -11,9 +11,7 @@ public class QuizManager : MonoBehaviour
     private int score;
     public TextMeshPro scoreText;
 
-    public GameObject quizCanvas, scoreDialog;
-
-    public TextMeshProUGUI questionTxt;
+    public TextMeshPro questionTxt;
 
 
     private void Start()
@@ -37,12 +35,6 @@ public class QuizManager : MonoBehaviour
             questionTxt.text = QnA[currentQuestion].questions;
             setAnswers();
         }
-        else
-        {
-            quizCanvas.gameObject.SetActive(false);
-            scoreDialog.gameObject.SetActive(true);
-        }
-
     }
 
     void setAnswers()

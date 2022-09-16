@@ -1,12 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 
 [System.Serializable]
-public class QandA : MonoBehaviour
+public class QandA
 {
-        public string questions;
-        public string[] answers;
-        public int correctAnswer;
+    public string questions;
+    public string[] answers;
+    public int correctAnswer;
 }

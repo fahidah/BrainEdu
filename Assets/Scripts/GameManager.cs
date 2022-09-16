@@ -27,12 +27,7 @@ public class GameManager : MonoBehaviour
         cerebrum.gameObject.SetActive(true);
     }
 
-    public void cerebrumDialog()
-    {
-        cerebrum.gameObject.SetActive(false);
-        frontal.gameObject.SetActive(true);
-    }
-
+   
     public void cerebellumDialog()
     {
         cerebellum.gameObject.SetActive(false);
@@ -43,28 +38,7 @@ public class GameManager : MonoBehaviour
         stem.gameObject.SetActive(false);
         brain.gameObject.SetActive(true);
     }
-    public void frontalDialog()
-    {
-        frontal.gameObject.SetActive(false);
-        parietal.gameObject.SetActive(true);
-    }
 
-    public void parietalDialog()
-    {
-        parietal.gameObject.SetActive(false);
-        occipital.gameObject.SetActive(true);
-    }
-    public void occipitalDialog()
-    {
-        occipital.gameObject.SetActive(false);
-        temporal.gameObject.SetActive(true);
-
-    }
-    public void temporalDialog()
-    {
-        temporal.gameObject.SetActive(false);
-        cerebellum.gameObject.SetActive(true);
-    }
     public void brainDialog()
     {
         brain.gameObject.SetActive(false);
