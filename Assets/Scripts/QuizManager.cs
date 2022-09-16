@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using System.Linq;
+using Microsoft.MixedReality.Toolkit.SpatialManipulation;
 
 public class QuizManager : MonoBehaviour
 {
@@ -27,6 +28,9 @@ public class QuizManager : MonoBehaviour
     //text for the question
     public TextMeshPro questionTxt;
 
+    [SerializeField]
+    //transparent material
+    private Material transparentMaterial;
 
     private void Start()
     {
@@ -63,7 +67,8 @@ public class QuizManager : MonoBehaviour
             currentQuestion.referencedPart.GetComponent<MeshRenderer>().enabled = true;
             for (int j = 0; j < currentQuestion.otherBrainParts.Length; j++)
             {
-                currentQuestion.otherBrainParts[j].GetComponent<MeshRenderer>().enabled = false;
+                currentQuestion.otherBrainParts[j].GetComponent<MeshRenderer>().material = transparentMaterial;
+                currentQuestion.otherBrainParts[j].GetComponent<ObjectManipulator>().enabled = false;
             }
             
 
@@ -72,11 +77,6 @@ public class QuizManager : MonoBehaviour
                 options[i].GetComponent<Answer>().isCorrect = true;
             }
         }
-    }
-
-    void setVisibleBrainPart()
-    {
-
     }
 
     // This keeps track of scores
