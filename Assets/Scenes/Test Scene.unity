@@ -1907,7 +1907,7 @@ MonoBehaviour:
   onDisabled:
     m_PersistentCalls:
       m_Calls: []
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1226097064}
   allowedManipulations: 7
   allowedInteractionTypes: -2147483641
   useForcesForNearManipulation: 0
@@ -1960,6 +1960,12 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1931437858206507323, guid: 68048c9f9341f6f49a1c36a315370ab5, type: 3}
+--- !u!4 &1226097064 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5907428463512864263, guid: 68048c9f9341f6f49a1c36a315370ab5,
+    type: 3}
+  m_PrefabInstance: {fileID: 898549219}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1270982351
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,6 +2317,7 @@ MonoBehaviour:
   - {fileID: 1054999852}
   scoreText: {fileID: 3939605952325949340}
   questionTxt: {fileID: 7649120794377568817}
+  transparentMaterial: {fileID: 2100000, guid: 11a0a9937ef6425488e1034e68b25295, type: 2}
 --- !u!4 &1346778089
 Transform:
   m_ObjectHideFlags: 0
@@ -2520,7 +2527,7 @@ MonoBehaviour:
   onDisabled:
     m_PersistentCalls:
       m_Calls: []
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1467358186}
   allowedManipulations: 7
   allowedInteractionTypes: -2147483641
   useForcesForNearManipulation: 0
@@ -2573,6 +2580,12 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6746371210878880466, guid: 68048c9f9341f6f49a1c36a315370ab5, type: 3}
+--- !u!4 &1467358186 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -3235826414857459170, guid: 68048c9f9341f6f49a1c36a315370ab5,
+    type: 3}
+  m_PrefabInstance: {fileID: 898549219}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1479347559
 PrefabInstance:
   m_ObjectHideFlags: 0
