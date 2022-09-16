@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using System.Linq;
 
 public class QuizManager : MonoBehaviour
 {
     //Create an array of questions to be tested
-    public List<QandA> QnA;
+    public QandA[] QnA;
+
+    //List to update questions being displayed
+    private static List<QandA> unasweredQnA;
 
     //make reference to the options buttton
     public GameObject[] options;
 
     //track the index of current question
-    public int currentQuestion;
+    private QandA currentQuestion;
 
     //declare variable for the score
     private int score;
@@ -26,25 +30,27 @@ public class QuizManager : MonoBehaviour
 
     private void Start()
     {
+        if(unasweredQnA == null || unasweredQnA.Count == 0)
+        {
+            unasweredQnA = QnA.ToList<QandA>();
+        }
         generateQuestion();
     }
 
     public void correct()
     {
-        QnA.RemoveAt(currentQuestion);
+        unasweredQnA.Remove(currentQuestion);
         generateQuestion();
-
     }
 
 
     void generateQuestion()
     {
-        if (QnA.Count > 0)
-        {
-            currentQuestion = Random.Range(0, QnA.Count);
-            questionTxt.text = QnA[currentQuestion].questions;
-            setAnswers();
-        }
+        int randomQuestionIndex = Random.Range(0, unasweredQnA.Count);
+        currentQuestion = unasweredQnA[randomQuestionIndex];
+
+        questionTxt.text = currentQuestion.questions;
+        setAnswers();
     }
 
     void setAnswers()
@@ -52,12 +58,12 @@ public class QuizManager : MonoBehaviour
         for (int i = 0; i < options.Length; i++)
         {
             //options[i].GetComponent<Answers>().isCorrect = false;
-            options[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = QnA[currentQuestion].answers[i];
+            options[i].transform.GetChild(0).GetComponent<TextMeshPro>().text = currentQuestion.answers[i];
 
-            if (QnA[currentQuestion].correctAnswer == i + 1)
+            if (currentQuestion.correctAnswer == i + 1)
             {
                 options[i].GetComponent<Answer>().isCorrect = true;
-
+                //unasweredQnA.Remove(currentQuestion);
             }
         }
     }
@@ -66,6 +72,6 @@ public class QuizManager : MonoBehaviour
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
-        scoreText.text = "Weldone! Your Score is: " + score + "/30";
+        scoreText.text =  score.ToString();
     }
 }

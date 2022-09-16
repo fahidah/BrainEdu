@@ -11,13 +11,11 @@ public class Answer : MonoBehaviour
     {
         if (isCorrect)
         {
-            Debug.Log("Correct Answer");
-            quizManager.UpdateScore(10);
+            quizManager.UpdateScore(20);
             quizManager.correct();
         }
         else
         {
-            Debug.Log("Wrong Answer");
             quizManager.correct();
         }
     }
