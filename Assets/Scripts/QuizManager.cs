@@ -75,13 +75,14 @@ public class QuizManager : MonoBehaviour
     {
         for (int i = 0; i < options.Length; i++)
         {
-            //options[i].GetComponent<Answers>().isCorrect = false;
-            options[i].transform.GetChild(0).GetComponent<TextMeshPro>().text = currentQuestion.answers[i];
+            options[i].GetComponent<Answer>().isCorrect = false;
+            options[i].transform.GetChild(1).GetComponentInChildren<TextMeshPro>().text = currentQuestion.answers[i];
             
 
             if (currentQuestion.correctAnswer == i + 1)
             {
                 options[i].GetComponent<Answer>().isCorrect = true;
+                
             }
         }
     }

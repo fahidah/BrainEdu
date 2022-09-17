@@ -161,20 +161,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1479347559}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &104978891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054999852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b4725c5bd9656041ac7dfd2491be08a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isCorrect: 0
-  quizManager: {fileID: 1346778088}
 --- !u!1001 &134947475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -303,12 +289,6 @@ Transform:
 --- !u!1 &134947477 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8752154283405346683, guid: fc97df8027319634f8ab3348c108205f,
-    type: 3}
-  m_PrefabInstance: {fileID: 134947475}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &134947479 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 765442779299707259, guid: fc97df8027319634f8ab3348c108205f,
     type: 3}
   m_PrefabInstance: {fileID: 134947475}
   m_PrefabAsset: {fileID: 0}
@@ -612,7 +592,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 134947489}
+      objectReference: {fileID: 1508701132}
     - target: {fileID: 8254180865109409820, guid: fc97df8027319634f8ab3348c108205f,
         type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -716,26 +696,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 712930211}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &712930213 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 765442779299707259, guid: fc97df8027319634f8ab3348c108205f,
-    type: 3}
-  m_PrefabInstance: {fileID: 712930211}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &712930215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712930213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b4725c5bd9656041ac7dfd2491be08a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isCorrect: 0
-  quizManager: {fileID: 1346778088}
 --- !u!1 &724197012 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6860671045458266759, guid: 68048c9f9341f6f49a1c36a315370ab5,
@@ -1016,7 +976,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 134947489}
+      objectReference: {fileID: 813443276}
     - target: {fileID: 8254180865109409820, guid: fc97df8027319634f8ab3348c108205f,
         type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -1123,12 +1083,6 @@ Transform:
 --- !u!1 &813443264 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8752154283405346683, guid: fc97df8027319634f8ab3348c108205f,
-    type: 3}
-  m_PrefabInstance: {fileID: 813443262}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &813443266 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 765442779299707259, guid: fc97df8027319634f8ab3348c108205f,
     type: 3}
   m_PrefabInstance: {fileID: 813443262}
   m_PrefabAsset: {fileID: 0}
@@ -1322,7 +1276,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 134947489}
+      objectReference: {fileID: 1054999862}
     - target: {fileID: 8254180865109409820, guid: fc97df8027319634f8ab3348c108205f,
         type: 3}
       propertyPath: onClicked.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -1429,12 +1383,6 @@ Transform:
 --- !u!1 &1054999850 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8752154283405346683, guid: fc97df8027319634f8ab3348c108205f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1054999848}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1054999852 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 765442779299707259, guid: fc97df8027319634f8ab3348c108205f,
     type: 3}
   m_PrefabInstance: {fileID: 1054999848}
   m_PrefabAsset: {fileID: 0}
@@ -2366,10 +2314,10 @@ MonoBehaviour:
     - {fileID: 568882838}
     - {fileID: 1335118582}
   options:
-  - {fileID: 712930213}
-  - {fileID: 813443266}
-  - {fileID: 134947479}
-  - {fileID: 1054999852}
+  - {fileID: 712930212}
+  - {fileID: 813443264}
+  - {fileID: 134947477}
+  - {fileID: 1054999850}
   scoreText: {fileID: 6599014034334056535}
   questionTxt: {fileID: 7649120794377568817}
   transparentMaterial: {fileID: 2100000, guid: 11a0a9937ef6425488e1034e68b25295, type: 2}
@@ -2755,20 +2703,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: 0
   quizManager: {fileID: 1346778088}
---- !u!114 &1522163706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813443266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b4725c5bd9656041ac7dfd2491be08a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isCorrect: 0
-  quizManager: {fileID: 1346778088}
 --- !u!1 &1567048423
 GameObject:
   m_ObjectHideFlags: 0
@@ -2916,20 +2850,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
---- !u!114 &1879798429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134947479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b4725c5bd9656041ac7dfd2491be08a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isCorrect: 0
-  quizManager: {fileID: 1346778088}
 --- !u!1 &2064473560
 GameObject:
   m_ObjectHideFlags: 0
