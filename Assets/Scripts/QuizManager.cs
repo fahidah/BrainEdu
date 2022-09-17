@@ -30,7 +30,7 @@ public class QuizManager : MonoBehaviour
 
     [SerializeField]
     //transparent material
-    private Material transparentMaterial;
+    private Material transparentMaterial, mainMaterial;
 
     public GameObject brainModel;
 
@@ -49,6 +49,7 @@ public class QuizManager : MonoBehaviour
     public void correct()
     {
         unasweredQnA.Remove(currentQuestion);
+
         generateQuestion();
     }
 
@@ -61,7 +62,8 @@ public class QuizManager : MonoBehaviour
             currentQuestion = unasweredQnA[randomQuestionIndex];
 
             questionTxt.text = currentQuestion.questions;
-            SetBrainMaterial();
+            //SetBrainMaterial();
+            UpdateBrainMaterial();
             setAnswers();
         }
         else
@@ -89,11 +91,37 @@ public class QuizManager : MonoBehaviour
 
     void SetBrainMaterial()
     {
+
         currentQuestion.referencedPart.GetComponent<MeshRenderer>().enabled = true;
-        for (int j = 0; j < currentQuestion.otherBrainParts.Length; j++)
+
+       
+        //for (int j = 0; j < currentQuestion.otherBrainParts.Length; j++)
         {
-            currentQuestion.otherBrainParts[j].GetComponent<MeshRenderer>().material = transparentMaterial;
-            currentQuestion.otherBrainParts[j].GetComponent<ObjectManipulator>().enabled = false;
+            //currentQuestion.otherBrainParts[j].GetComponent<MeshRenderer>().material = transparentMaterial;
+           // currentQuestion.otherBrainParts[j].GetComponent<ObjectManipulator>().enabled = false;
+        }
+
+        
+
+        Debug.Log("Mat set");
+    }
+
+    void UpdateBrainMaterial()
+    {
+        
+        string referencedPart = currentQuestion.referencedPart.name;
+        int brainParts = brainModel.transform.childCount;
+
+        //Debug.Log(brainParts);
+        for(int b = 0; b < brainParts; b++)
+        {
+            brainModel.transform.GetChild(b).GetComponent<MeshRenderer>().material = mainMaterial;
+
+            if (brainModel.transform.GetChild(b).name != referencedPart)
+            {
+                brainModel.transform.GetChild(b).GetComponent<MeshRenderer>().material = transparentMaterial;
+                brainModel.transform.GetChild(b).GetComponent<ObjectManipulator>().enabled = false;
+            }
         }
     }
 

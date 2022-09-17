@@ -2293,12 +2293,6 @@ MonoBehaviour:
     - Corpus Callosum
     correctAnswer: 2
     referencedPart: {fileID: 1467358179}
-    otherBrainParts:
-    - {fileID: 1226097057}
-    - {fileID: 724197012}
-    - {fileID: 1183084360}
-    - {fileID: 568882838}
-    - {fileID: 1335118582}
   - questions: Select the figure four in the option below
     answers:
     - 1
@@ -2306,13 +2300,7 @@ MonoBehaviour:
     - 3
     - 4
     correctAnswer: 4
-    referencedPart: {fileID: 724197012}
-    otherBrainParts:
-    - {fileID: 1226097057}
-    - {fileID: 1183084360}
-    - {fileID: 1467358179}
-    - {fileID: 568882838}
-    - {fileID: 1335118582}
+    referencedPart: {fileID: 1335118582}
   options:
   - {fileID: 712930212}
   - {fileID: 813443264}

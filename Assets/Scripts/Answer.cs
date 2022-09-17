@@ -9,17 +9,13 @@ public class Answer : MonoBehaviour
 
     public void Answers()
     {
-        if (isCorrect == true)
+        if (isCorrect)
         {
-            Debug.Log(isCorrect);
             quizManager.UpdateScore(20);
-            Debug.Log("Correct Answer");
             quizManager.correct();
         }
         else
         {
-            Debug.Log(isCorrect);
-            Debug.Log("Wrong Answer");
             quizManager.correct();
         }
     }
