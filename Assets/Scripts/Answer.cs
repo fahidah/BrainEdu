@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Answer : MonoBehaviour
 {
-    public bool isCorrect = false;
+    public bool isCorrect;
     public QuizManager quizManager;
 
     public void Answers()
@@ -12,10 +12,12 @@ public class Answer : MonoBehaviour
         if (isCorrect)
         {
             quizManager.UpdateScore(20);
+            Debug.Log("Correct Answer");
             quizManager.correct();
         }
         else
         {
+            Debug.Log("Wrong Answer");
             quizManager.correct();
         }
     }
