@@ -7,20 +7,20 @@ public class GameManager : MonoBehaviour
 {
 
     //Load Learn Scene
-    public void LearnScene(string name)
+    public void MainScene()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Main Scene");
     }
 
     //Load Quiz Scene
-    public void QuizScene(string name)
+    public void TestScene()
     {
-        SceneManager.LoadScene("TestScene");
+        SceneManager.LoadScene("Test Scene");
     }
 
 
     //Reload Quiz Scene
-    public void ReloadLearnScene(string name)
+    public void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

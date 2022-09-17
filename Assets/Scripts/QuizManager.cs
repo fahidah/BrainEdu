@@ -26,13 +26,16 @@ public class QuizManager : MonoBehaviour
     public TextMeshPro scoreText;
 
     //text for the question
-    public TextMeshPro questionTxt;
+    public TextMeshPro questionTxt, finalFeedback;
 
     [SerializeField]
     //transparent material
     private Material transparentMaterial, mainMaterial;
 
     public GameObject brainModel;
+    public GameObject finalpage;
+    public GameObject questionPhase;
+
 
 
     [SerializeField]
@@ -49,7 +52,6 @@ public class QuizManager : MonoBehaviour
     public void correct()
     {
         unasweredQnA.Remove(currentQuestion);
-
         generateQuestion();
     }
 
@@ -62,14 +64,15 @@ public class QuizManager : MonoBehaviour
             currentQuestion = unasweredQnA[randomQuestionIndex];
 
             questionTxt.text = currentQuestion.questions;
-            //SetBrainMaterial();
+
             UpdateBrainMaterial();
             setAnswers();
         }
         else
         {
-            questionTxt.text = "\t\t\tWeldone!\n Your Total score is......of 100.    Would you like to retry?";
-            answerButtons.SetActive(false);
+            finalFeedback.text = "\t\t\t Weldone!\n\n \t\t Your Total score is " + score + " of 100. \n\n \t\t\t Would you like to retry?";
+            questionPhase.SetActive(false);
+            finalpage.SetActive(true);
         }
     }
 
@@ -84,27 +87,10 @@ public class QuizManager : MonoBehaviour
             if (currentQuestion.correctAnswer == i + 1)
             {
                 options[i].GetComponent<Answer>().isCorrect = true;
-                
             }
         }
     }
 
-    void SetBrainMaterial()
-    {
-
-        currentQuestion.referencedPart.GetComponent<MeshRenderer>().enabled = true;
-
-       
-        //for (int j = 0; j < currentQuestion.otherBrainParts.Length; j++)
-        {
-            //currentQuestion.otherBrainParts[j].GetComponent<MeshRenderer>().material = transparentMaterial;
-           // currentQuestion.otherBrainParts[j].GetComponent<ObjectManipulator>().enabled = false;
-        }
-
-        
-
-        Debug.Log("Mat set");
-    }
 
     void UpdateBrainMaterial()
     {
@@ -130,6 +116,5 @@ public class QuizManager : MonoBehaviour
     {
         score += scoreToAdd;
         scoreText.text =  score.ToString();
-        Debug.Log(score);
     }
 }
