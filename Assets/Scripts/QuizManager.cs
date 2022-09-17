@@ -70,7 +70,7 @@ public class QuizManager : MonoBehaviour
         }
         else
         {
-            finalFeedback.text = "\t\t\t Weldone!\n\n \t\t Your Total score is " + score + " of 100. \n\n \t\t\t Would you like to retry?";
+            finalFeedback.text = "\t\t  Weldone!\n\t Your Total score is " + score + " of 100. \n\t  Would you like to retry?";
             questionPhase.SetActive(false);
             finalpage.SetActive(true);
         }
