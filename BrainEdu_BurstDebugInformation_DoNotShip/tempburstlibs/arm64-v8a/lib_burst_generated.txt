@@ -198,6 +198,7 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\Microsoft.MixedReality.Toolkit.UXComponents.dll
 --root-assembly=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\Microsoft.MixedReality.Toolkit.Audio.dll
 --root-assembly=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\Unity.XR.Management.dll
+--root-assembly=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\Unity.Services.Core.Threading.dll
 --root-assembly=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\Unity.Services.Core.Configuration.dll
 --root-assembly=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\UnityEngine.SpatialTracking.dll
@@ -213,7 +214,6 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
 --root-assembly=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll
 --root-assembly=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\Unity.XR.OpenXR.Features.RuntimeDebugger.dll
---root-assembly=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll
 --root-assembly=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\Unity.XR.OpenXR.Features.OculusQuestSupport.dll
 --assembly-folder=C:\Users\User\Documents\GitHub\BrainEdu\Temp\StagingArea\Data\Managed\
